@@ -1,0 +1,326 @@
+/* 
+Project Name: Blank Template
+Client: Your Client
+Author: Your Name
+Developer @GA in NYC
+*/
+
+
+/******************************************
+/* SETUP                   
+/*******************************************/
+
+/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+.alignright {
+	float: right; 
+	padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+	float: left; 
+	padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+/******************************************
+/* BASE STYLES                   
+/*******************************************/
+
+body {
+    line-height: 1.4;
+    font-family: 'Cinzel', serif;
+    background-color: #020802;
+    margin: 30px;
+  
+}
+
+
+/******************************************
+/* LAYOUT                   
+/*******************************************/
+
+/* Center the container */
+#container {
+	width: 100%;
+    margin: 0 auto;	
+}
+
+.topofpage {
+    width: 100%;
+    background: #00162B;
+    border-top: 5px solid #BABCBA;
+    border-left: 5px solid #BABCBA;
+    border-right: 5px solid #373837;
+    border-bottom: 5px solid #373837;
+}
+
+.topofpage h2 {
+   
+    font-size: 2.353em;
+    padding-top: 40px;
+    color: white;
+    text-align: center;   
+} 
+
+.topofpage span {
+   color: #6a687a;
+   font-size: 0.750em;
+}
+
+.navbar li {
+    font-size: 1.063em; 
+    padding: 5px;
+    margin: 20px;
+    display: inline-block;
+    font-family: 'Comfortaa', cursive;
+}
+
+.navbar a {
+    width: 100%;
+    text-align: center;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+a:hover { 
+    color: yellow;
+}
+
+#matphotos {
+    -moz-column-count: 6;
+    -moz-column-gap: 0px;
+    -webkit-column-count: 6;
+    -webkit-column-gap: 0px;
+    column-count: 6;
+    column-gap: 0px;
+    width: 100%;
+    background-color: #00162B;
+    border-left: 2px solid white;
+    border-right: 2px solid white;
+
+}
+
+#matphotos img{
+    margin-left: -20px;
+     display: inline-block;
+     margin-bottom: 0px;
+     width: 100%;
+}
+
+.matlacha {
+    color: white;
+    padding: 5px;
+    font-family: 'Quicksand', sans-serif;
+    background-color: #536271;
+    text-align: center;
+    border-top: 2px solid #6a687a;
+}
+
+.matlacha span {
+    color: red;
+}
+
+.leisure {
+    color: white;
+    padding: 5px;
+    font-family: 'Quicksand', sans-serif;
+    background-color: #536271;
+    text-align: center;
+    border-top: 2px solid #6a687a;
+}
+
+.localinfo {
+    color: white;
+    padding: 5px;
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+    border-top: 2px solid #6a687a;
+}
+
+.attrac {
+    color: white;
+    padding: 5px;
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+    border-top: 2px solid #6a687a;
+    border-bottom: 2px solid #6a687a;
+}
+
+.sports {
+    color: white;
+    padding: 5px;
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+    border-top: 2px solid #6a687a;
+}
+
+
+.local {
+    color: white;
+    padding: 5px;
+    font-family: 'Quicksand', sans-serif;
+    background-color: #536271;
+    text-align: center;
+    border-top: 2px solid #6a687a;     
+}
+
+.loctype {
+    color: white;
+    padding: 5px;
+    font-family: 'Quicksand', sans-serif;
+    text-align: center; 
+    border-top: 2px solid #6a687a;     
+}
+
+.loctype span {
+    color: red;
+}
+
+.rental div{
+    margin-top: 10px;
+    margin-left: 20px;
+    background-color: #959EAA;
+    border: 2px solid white;
+    float: left;
+    text-align: center;
+    padding: 5px;
+    height: 100px;
+    width: 180px;
+    border-radius: 5px;
+}
+
+.rental p {
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    
+}
+
+.closest div{
+    margin-top: 10px;
+    margin-left: 20px;
+    background-color: #959EAA;
+    border: 2px solid red;
+    float: left;
+    text-align: center;
+    padding: 5px;
+    font-family: 'Quicksand', sans-serif;
+    height: 100px;
+    width: 180px;
+    border-radius: 5px;
+}
+
+.closest a {
+    color: white;
+    text-decoration: none;
+}
+
+.closest span {
+    color: red;
+}
+
+.closest p{
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+
+a:hover {
+    color: black;
+}
+
+.map1{
+    margin-left: 80px;
+}
+
+.video{
+    margin: 50px;
+    display: inline-block;
+
+}
+
+.bottom nav {
+    height: 50px;
+    margin: 10px;
+    padding-top: 10px;
+    text-align: center;
+    background-color: #536271;
+    border-bottom: 5px solid #6a687a;
+}
+
+.bottom a {
+    margin-left: 20px;
+}
+
+@media only screen and (max-width : 768px) {
+    nav {
+        border-bottom: 0;
+}
+    nav ul {
+        display: none;
+        height: auto;
+}
+
+    .navbar li{
+    display: block;
+}
+
+    nav a#pull {
+        display: block;
+        width: 100%;
+        position: relative;
+}
+
+    nav a#pull:after {
+        content:"";
+        background: url('../photos/nav-icon.png') no-repeat;
+        width: 30px;
+        height: 30px;
+        display: inline-block;
+        position: absolute;
+        right: -10px;
+        top: 5px;
+}
+    
+    .map1 {
+
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .video {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+
+/******************************************
+/* ADDITIONAL STYLES                   
+/*******************************************/
+
+
+
+

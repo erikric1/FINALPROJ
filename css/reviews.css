@@ -1,0 +1,231 @@
+/* 
+Project Name: Blank Template
+Client: Your Client
+Author: Your Name
+Developer @GA in NYC
+*/
+
+
+/******************************************
+/* SETUP                   
+/*******************************************/
+
+/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+.alignright {
+	float: right; 
+	padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+	float: left; 
+	padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+/******************************************
+/* BASE STYLES                   
+/*******************************************/
+
+body {
+    line-height: 1.4;
+    font-family: 'Cinzel', serif;
+    background-color: black;
+    margin: 30px;
+  
+}
+
+
+/******************************************
+/* LAYOUT                   
+/*******************************************/
+
+/* Center the container */
+#container {
+	width: 100%;
+  margin: 0 auto;
+	
+}
+
+.topofpage {
+  width: 100%;
+  background: black;
+}
+
+.topofpage h2 {
+  border-top: 2px solid orange;
+  font-size: 2.353em;
+  padding-top: 40px; 
+  color: white;
+  text-align: center;    
+} 
+
+.topofpage span {
+   color: #FF7373;
+   font-size: 0.750em;
+}
+
+.navbar li {
+  font-size: 1.063em; 
+  padding: 5px;
+  margin: 20px;
+  display: inline-block;
+  font-family: 'Comfortaa', cursive;
+  background-color: black;  
+}
+
+.navbar a {
+  width: 100%;
+  text-align: center;
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+a:hover {
+  color: orange;
+}
+
+
+.nightphoto {
+  width: 100%;
+  height: 100%;
+  background-image: url(../photos/matsunrise.jpg); 
+}
+
+.guest {
+  color: white;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 25px;
+  text-align: center;
+}
+
+.pure-control-group {
+          margin-bottom: 10px;
+          text-align: center;
+        }
+    
+        .reviews {
+          margin-bottom: 20px;
+        }
+
+        #review-list p {
+          text-align: center;
+        }
+    
+        .review-list {
+          list-style-type: none;
+          font-family: 'Quicksand', sans-serif;
+          background-color: white;
+          width: 800px;
+          margin-left: auto;
+          margin-right: auto;
+          padding: 0;
+        }
+    
+        .review {
+          background: black;
+          padding: 1px 10px 10px;
+          color: white;
+          text-align: center;
+          margin-bottom: 10px;
+        }
+
+        .review span {
+          color: yellow;
+        }
+
+        .review a {
+          color: white;
+          font-family: 'Quicksand', sans-serif;
+          font-weight: bold;
+          text-decoration: none;
+        }
+
+#name, #email {
+  width: 400px;
+}
+
+#review {
+  height: 150px;
+  width: 400px;
+}
+
+#submitreview {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.bottom nav {
+    height: 50px;
+    margin: 10px;
+    padding-top: 10px;
+    text-align: center;
+    background-color: black;
+    border-bottom: 2px solid orange;
+}
+
+.bottom a {
+    margin-left: 20px;
+}
+    
+@media only screen and (max-width : 768px) {
+    nav {
+        border-bottom: 0;
+}
+    nav ul {
+        display: none;
+        height: auto;
+}
+
+    @media (max-width: 768px) {
+    .navbar li{
+    display: block;
+}
+
+    nav a#pull {
+        display: block;
+        width: 100%;
+        position: relative;
+}
+
+    nav a#pull:after {
+        content:"";
+        background: url('../photos/nav-icon.png') no-repeat;
+        width: 30px;
+        height: 30px;
+        display: inline-block;
+        position: absolute;
+        right: -10px;
+        top: 5px;
+}
+
+
+
+
+/******************************************
+/* ADDITIONAL STYLES                   
+/*******************************************/
+
+
+
+

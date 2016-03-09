@@ -1,0 +1,214 @@
+/* 
+Project Name: Blank Template
+Client: Your Client
+Author: Your Name
+Developer @GA in NYC
+*/
+
+
+/******************************************
+/* SETUP                   
+/*******************************************/
+
+/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+.alignright {
+	float: right; 
+	padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+	float: left; 
+	padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+/******************************************
+/* BASE STYLES                   
+/*******************************************/
+
+body {
+    line-height: 1.4;
+    font-family: 'Cinzel', serif;
+    background-image: url(../photos/swirl_pattern.png);
+    margin: 30px;
+}
+
+
+/******************************************
+/* LAYOUT                   
+/*******************************************/
+
+/* Center the container */
+#container {
+	width: 100%;
+    margin: 0 auto;
+	
+}
+
+.topofpage {
+    width: 100%;
+    border-top: 5px solid #BABCBA;
+    border-left: 5px solid #BABCBA;
+    border-right: 5px solid #373837;
+    border-bottom: 5px solid #373837;
+    background-image: url(../photos/tweed.png);
+}
+
+.topofpage h2 {
+    font-size: 2.353em;
+    padding-top: 40px;
+    color: white;
+    text-align: center;   
+} 
+
+.topofpage span {
+   color: black;
+   font-size: 0.750em;
+}
+
+.navbar li {
+    font-size: 1.063em; 
+    padding: 5px;
+    margin: 20px;
+    display: inline-block;
+    font-family: 'Comfortaa', cursive;
+    background-image: url(../photos/tweed.png); 
+}
+
+.navbar a {
+    width: 100%;
+    text-align: center;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+a:hover {
+    color: black;
+}
+
+
+#nightphoto h4 {
+    width: 90%;
+    height: 90%;
+
+    
+}
+
+.nightphoto img{
+    width: 100%;
+    height: 70%;
+    border: 5px solid white;
+}
+
+.propdesc h4 {
+    border-top: 5px solid black;
+    font-size: 1.550em;
+    font-family: 'Quicksand', sans-serif;
+    color: black;
+    text-align: center;
+}
+
+.propdesc p {
+    padding: 5px;
+    color: white;
+    font-weight: bolder;
+    font-family: 'Quicksand', sans-serif;
+    margin: 40px;
+    border: 5px solid black;
+    background-image: url(../photos/tweed.png);
+    
+}
+
+.suit,.beds, .bath, .entert, .dining,.outside, .pool, .kitchen, .general  {
+    padding: 5px;
+    height: auto;
+    color: black;
+    font-family: 'Quicksand', sans-serif;
+    background-color: #D4D4D4;
+    margin: 40px;
+    border: 5px solid black;
+}
+
+.beds, .bath, .entert, .dining, .kitchen, .outside, .pool, .general p {
+    font-size: .882em;    
+}
+
+.beds, .bath, .entert, .dining, .kitchen, .outside, .pool, .general h4 {
+
+    font-size: 0.938em;   
+}
+
+
+.bottom nav{
+    height-top: 50px;
+    margin: 20px;
+    padding-top: 10px;
+    text-align: center;
+    border: 5px solid white;
+    background-image: url(../photos/tweed.png);    
+}
+
+.bottom a {
+    margin-left: 20px;
+}
+
+@media only screen and (max-width : 768px) {
+    nav {
+        border-bottom: 0;
+}
+    nav ul {
+        display: none;
+        height: auto;
+}
+
+    @media (max-width: 768px) {
+    .navbar li{
+    display: block;
+}
+
+    nav a#pull {
+        display: block;
+        width: 100%;
+        position: relative;
+}
+
+    nav a#pull:after {
+        content:"";
+        background: url('../photos/nav-icon.png') no-repeat;
+        width: 30px;
+        height: 30px;
+        display: inline-block;
+        position: absolute;
+        right: -7px;
+        top: 5px;
+}
+
+
+
+/******************************************
+/* ADDITIONAL STYLES                   
+/*******************************************/
+
+
+
+
